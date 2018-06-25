@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Developed by realsbdev
 -->
 <html>
 	<head>
@@ -10,6 +8,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="images/logo.png" type="image/png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -18,9 +17,10 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
+					<header id="header" class="alt">
+						<span class="logo"><a href="index.html"><img src="images/logo.png" alt="" /></a></span>
 						<h1>Registration Form</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<p>Please provide all required information to speed your loan process</p>
 					</header>
 
 				<!-- Main -->
@@ -28,27 +28,176 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								<h2>Magna feugiat lorem</h2>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
-								<h2>Tempus veroeros</h2>
-								<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+								<h2>Personal Information</h2>
+								<form method="POST" action="#">
+									<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" required>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="firstName" id="firstName" value="" placeholder="First Name" required/>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="middleName" id="middleName" value="" placeholder="Middle Name" required/>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="email" id="email" value="" placeholder="Your Email" required/>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="password" name="password" id="password" value="" placeholder="Set Password" required/>
+											</div>
+									</div>
+									<br>
+									<h2>Address</h2>
+									<div class="row gtr-uniform">
+										<div class="col-12 col-12-xsmall">
+											<input type="text" name="address1" id="address1" value="" placeholder="Adress Line 1" required/>
+										</div>
+										<div class="col-12 col-12-xsmall">
+											<input type="text" name="address2" id="address2" value="" placeholder="Adress Line 2" />
+										</div>
+										<div class="col-4 col-6-xsmall">
+											<select name="howLong">
+												<option>How long have you been living in this address</option>
+												<option>< 3 years</option>
+												<option>< 5 years</option>
+												<option>> 10 years</option>
+											</select>
+										</div>
+										<div class="col-4 col-6-xsmall">
+												<input type="text" name="hphone" id="hphone" value="" placeholder="Home Phone Number" />
+										</div>
+										<div class="col-4 col-6-xsmall">
+												<input type="text" name="mphone" id="mphone" value="" placeholder="Mobile Phone Number" />
+										</div>
+										<div class="col-4 col-12-small">
+											<h3>Do you:</h3>
+												<input type="radio" id="apartment" name="apartment">
+												<label for="apartment">Own</label>
+												<input type="radio" id="apartment" name="apartment">
+												<label for="apartment">Rent</label>
+												<input type="text" name="others" placeholder="Describe">
+										</div>
+										<div class="col-4 col-6-xsmall">
+											<select name="relationship">
+												<option>Relationship Status</option>
+												<option>Single</option>
+												<option>Married</option>
+												<option>Divorced</option>
+												<option>Widow</option>
+												<option>Seperated</option>
+											</select>
+										</div>
+										<div class="col-4 col-6-xsmall">
+											<select name="relationship">
+												<option>Do you live</option>
+												<option>Alone</option>
+												<option>with Spouse</option>
+												<option>Children</option>
+												<option>Parent</option>
+												<option>Relative</option>
+											</select>
+										</div>
+									</div>
+									<br>
+									<div class="row gtr-uniform">
+										<div class="col-12 col-12-xsmall">
+											<input type="text" name="landlord" id="landlord" value="" placeholder="Name of Landlord/Mortgage Co." />
+										</div>
+										<div class="col-12 col-12-xsmall">
+											<input type="text" name="landlordPhone" id="landlordPhone" value="" placeholder="Phone Number" />
+										</div>
+									</div>
+									<br>
+									<h2>Employment Information</h2>
+									<div class="row gtr-uniform">
+										<div class="col-4 col-12-xsmall">
+											<input type="text" id="employer" value="" placeholder="Employer's name">
+										</div>
+										<div class="col-4 col-12-xsmall">
+											<input type="text" id="jobTitle" value="" placeholder="Your Job Title">
+										</div>
+										<div class="col-4 col-12-xsmall">
+											<input type="text" id="supervisor" value="" placeholder="Your Supervisor">
+										</div>
+										<div class="col-4 col-12-xsmall">
+											<input type="text" id="work" value="" placeholder="Work Phone">
+										</div>
+										<div class="col-4 col-12-xsmall">
+											<select>
+												<option>Status</option>
+												<option value="fulltime">Full Time</option>
+												<option value="parttime">Part Time</option>
+											</select>
+										</div>
+										<div class="col-4 col-12-xsmall">
+											<input type="text" id="workHour" placeholder="Shift/ Work hours">
+										</div>
+										<div class="col-12 col-12-xsmall">
+											<input type="text" id="workAddress" placeholder="Work Full Address">
+										</div>
+										<div class="col6 col-12-xsmall">
+											<select id="howpaid">
+												<option value="">How Paid</option>
+												<option value="deposit">Bank Deposit</option>
+												<option value="check">Check</option>
+												<option value="cash">Cash</option>
+											</select>
+										</div>
+										<div class="col-6 col-12-xsmal">
+											<input type="text" id="netpay" placeholder="Net take home pay">
+										</div>
+									</div>
+									<br/>
+									<h2>References</h2>
+									<p>You are required to provide 3 References</p>
+									<div class="row gtr-uniform">
+										<div class="col-4 col-6-xsmal">
+											<h3>Referee 1</h3>
+											<input type="text" id="reference" placeholder="Full Name"><br>
+											<input type="text" id="address" placeholder="Address"><br>
+											<input type="text" id="phone" placeholder="Phone Number"><br>
+											<input type="text" id="relationship" placeholder="Relationship">
+										</div>
+										<div class="col-4 col-6-xsmal">
+											<h3>Referee 2</h3>
+											<input type="text" id="reference" placeholder="Full Name"><br>
+											<input type="text" id="address" placeholder="Address"><br>
+											<input type="text" id="phone" placeholder="Phone Number"><br>
+											<input type="text" id="relationship" placeholder="Relationship">
+										</div>
+										<div class="col-4 col-6-xsmal">
+											<h3>Referee 3</h3>
+											<input type="text" id="reference" placeholder="Full Name"><br>
+											<input type="text" id="address" placeholder="Address"><br>
+											<input type="text" id="phone" placeholder="Phone Number"><br>
+											<input type="text" id="relationship" placeholder="Relationship">
+										</div>
+									</div>
+									<br>
+									<p>By clicking Submit button you certify that all information provided in this form is accurate. 
+										You authorize verification of the truthfullness of all information contained herein, including contacts with 
+										any person or firms listed above, and fully release all parties from all liability for any damage that may result. 
+										Any false statements above shall be suficient  basis for rejection.
+									</p>
+									<input type="button" value="Submit" name="submit" class="button primary">
+								</form>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<h2>World Quick Loan</h2>
+							<p>World Quick Loan is an affiliation of International Monetary Fund and works in partner with top financial institutio and ensuring 
+								small business and good citizens all over the world have access to finance for there businesses.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="aboutus.html" class="button">Learn More</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contact Us</h2>
 							<dl class="alt">
 								<dt>Address</dt>
 								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
@@ -65,7 +214,7 @@
 								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Amazing Life Incorporation.</p>
 					</footer>
 
 			</div>
